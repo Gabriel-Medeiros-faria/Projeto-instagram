@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto';
+    background-color: #E5E5E5;
+    height: 100%;
+    width: 100%;
+    
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    height: 54px;
+}
+
+.topo-topo {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 35px;
+
+}
+
+.topo {
+    background-color: #FFFFFF;
+    height: 54px;
+    width: 935px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo .itens-topo-esquerda {
+    display: flex;
+}
+
+.topo .itens-topo-esquerda .logoinstagram {
+    margin-right: 10px;
+}
+
+.topo .itens-topo-meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #979797;
+    ;
+    background-color: #FAFAFA;
+    width: 215px;
+    height: 28px;
+    border: 1px solid #DBDBDB;
+}
+
+.imageminstagram {
+    border-left: 1px solid #DBDBDB;
+    padding-left: 11.37px;
+}
+
+.imageminstagram2 {
+    display: none;
+}
+
+.topo .itens-topo-direita img {
+    margin-left: 25.5px;
+}
+
+.container {
+    width: 935px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 88px;
+    position: relative;
+}
+
+
+.stories {
+    gap: 7px;
+    width: 614px;
+    height: 118px;
+    overflow-x: hidden;
+    flex-wrap: none;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.seta-story {
+    position: absolute;
+    right: 8px;
+}
+
+.stories .stories-caixinha {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stories .stories-caixinha img {
+    background-image: url("stories_background 1.png");
+    background-size: 100% 100%;
+    padding: 5px;
+
+}
+
+.stories .stories-caixinha p {
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+.posts {
+    width: 614px;
+    height: 749px;
+    margin-right: 28px;
+}
+
+.post {
+    margin-bottom: 60px;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+}
+
+.ultimo-post {
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+    
+}
+
+.topo-post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+.esquerda-topo-post {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.esquerda-topo-post img {
+    margin-right: 15px;
+    margin-left: 17px;
+    width: 32px;
+    height: 32px;
+}
+
+.direita-topo-post {
+    margin-right: 18.5px;
+}
+
+.img-post img {
+    width: 100%;
+}
+
+.embaixo-post {
+    display: flex;
+    justify-content: space-between;
+    width: 612px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.itens-embaixo-esquerda {
+    display: flex;
+}
+
+.itens-embaixo-esquerda img {
+    width: 18px;
+    height: 18px;
+    margin-left: 18px;
+}
+
+.item-embaixo-direita {
+    margin-right: 17.63px;
+    width: auto;
+    height: 18px;
+}
+
+.tudo-embaixo-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    height: 76px;
+
+}
+
+.comentários-post {
+    font-family: 'roboto';
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+
+.comentários-post b {
+    font-weight: 500;
+}
+
+.comentários-post img {
+    margin-left: 17px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.barra-horizontal-baixo {
+    width: 614px;
+    height: 54px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    position: fixed;
+    bottom: 0px;
+    display: none;
+    
+
+}
+
+.sidebar {
+    width: 300px;
+    height: 429px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: calc((100vw - 935px)/2);
+    top: 90px;
+}
+
+.topo-sidebar {
+    display: flex;
+    align-items: center;
+}
+
+.topo-sidebar img {
+    margin-right: 17px;
+    border-radius: 28px;
+}
+
+.topo-sidebar p {
+    font-weight: 300;
+    color: #8E8E8E;
+}
+
+.baixo-sidebar {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+.sugestoes-vertudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sugestoes-vertudo h4 {
+    font-weight: 500;
+    color: #8E8E8E;
+    font-size: 12px;
+}
+
+.sugestoes-vertudo p {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.caixa-seguidores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.imagemetexto-sidebar {
+    display: flex;
+}
+
+.caixa-seguidores img {
+    width: 32px;
+    height: 32px;
+    margin-right: 11px;
+}
+
+.texto-seguidores h4 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.texto-seguidores p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #8E8E8E;
+}
+
+.seguir {
+    font-weight: 500;
+    font-size: 12px;
+    color: #139EF2;
+}
+
+.sobre-sidebar p:nth-child(1) {
+    margin-top: 33px;
+    margin-bottom: 18px;
+}
+
+.sobre-sidebar p {
+    font-weight: 400;
+    font-size: 11px;
+    color: #C7C7C7;
+}
+
+@media (max-width: 935px) {
+    .sidebar {
+        display: none;
+    }
+
+    .topo {
+        width: 100%;
+        height: 54px;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .storie-com-posts {
+        width: 614px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+}
+
+@media (max-width: 614px) {
+    .topo {
+        height: 54px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .barra-horizontal-baixo {
+        display: inline;
+        width: 614px;
+        height: 54px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #FFFFFF;
+        border: 1px solid #DBDBDB;
+        position: fixed;
+        bottom: 0px;
+        
+    }
+    footer{
+        width: 100%;
+    }
+    .itens-topo-topo-meio .itens-topo-meio {
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .imageminstagram {
+        display: none;
+        border-right: none;
+    }
+    .seta-story{
+        display: none;
+    }
+    .stories{
+        border: none;
+        margin: 0;
+        background-color: #E5E5E5;
+    }
+    .imageminstagram2 {
+        display: inline;
+    }
+    .container{
+        margin-top: 50px;
+    }
+    .storie-com-posts{
+        margin-bottom: 1560px;
+    }
+    .itens-topo-direita img:nth-child(2) {
+        display: none;
+    }
+
+    .itens-topo-direita img:nth-child(3) {
+        display: none;
+    }
+
+    .itens-topo-direita img:nth-child(4) {
+        display: none;
+    }
+
+}
